@@ -9,10 +9,10 @@ const pacientsTable = document.getElementById("pacientesId");
 const data = [];
 
 myForm.addEventListener("submit", (e) => {
+  e.preventDefault();
   const impuestoCliente = new Impuestos(myIncom.value, myDeduction.value);
   const client = new Cliente(myName.value, impuestoCliente);
 
-  e.preventDefault();
   data.push(client);
 
   pacientsTable.innerHTML += `<tr>

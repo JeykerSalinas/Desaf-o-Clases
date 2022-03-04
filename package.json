@@ -5,7 +5,7 @@
   "main": "assets/js/index.js",
   "type": "module",
   "scripts": {
-    "build": "babel assets/js/index.js -d lib"
+    "build": "babel  assets/js/index.js -d lib --presets=@babel/preset-env"
   },
   "keywords": [],
   "author": "",
@@ -16,3 +16,5 @@
     "@babel/preset-env": "^7.16.11"
   }
 }
+
+
